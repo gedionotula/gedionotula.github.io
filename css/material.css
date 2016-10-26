@@ -398,10 +398,10 @@ html {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #21b68e;
   text-shadow: none; }
 ::selection {
-  background: #b3d4fc;
+  background: #21b68e;
   text-shadow: none; }
 
 /*

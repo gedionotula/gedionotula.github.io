@@ -1,240 +1,535 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Mtaandao, a sweet new take on WordPress.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Mtandao Framework</title>
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/style.css">
 
-    <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/material.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #downoad {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-      <div class="wandia-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="wandia-title mdl-layout-title">
-            <a href="http://mtaandao.github.io/"><img class="wandia-logo-image" src="images/android-logo.png"></a>
-          </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="wandia-header-spacer mdl-layout-spacer"></div>
-          <div class="wandia-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
-          </div>
-          <!-- Navigation -->
-          <div class="wandia-navigation-container">
-            <nav class="wandia-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.php">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://demo.mtaandao.co.ke">Demo</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="downloads.php">Downloads</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="http://apps.mtaandao.co.ke">Apps</a>
-            </nav>
-          </div>
-          <span class="wandia-mobile-title mdl-layout-title">
-            <img class="wandia-logo-image" src="images/android-logo.png">
-          </span>
-          <button class="wandia-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a href="https://github.com/mtaandaoio/mtaandao/archive/v16.10.zip"> v 16.10</a></li>
-            <li disabled class="mdl-menu__item"><a href="https://github.com/mtaandaoio/mtaandao/archive/v16.09.zip">v 16.09</a></li>
-            <li class="mdl-menu__item"><a href="http://docs.mtaandao.co.ke">Mtaandao Docs</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="wandia-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="wandia-logo-image" src="images/android-logo-white.png">
-        </span>
-        <nav class="mdl-navigation">
-          <span class="mdl-navigation__link" href="about.php">About</span>
-          <a class="mdl-navigation__link" href="http://demo.mtaandao.co.ke">Demo</a>
-          <a class="mdl-navigation__link" href="">Documentation</a>
-          <div class="wandia-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Developers</span>
-          <a class="mdl-navigation__link" href="">Contribute</a>
-          <div class="wandia-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Custom Apps</span>
-          <a class="mdl-navigation__link" href="">Get Quote</a>
-          <div class="wandia-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Connect</span>
-          <a class="mdl-navigation__link" href="">Facebook</a>
-          <a class="mdl-navigation__link" href="">Twitter</a>
-          <a class="mdl-navigation__link" href="">Instagram</a>
+  <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/camera.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('.gallery .gall_item').touchTouch();
+ });
+ $(document).ready(function(){
+     jQuery('#camera_wrap').camera({
+      loader: false,
+      pagination: true ,
+      minHeight: '500',
+      thumbnails: false,
+      height: '44.42708333333333%',
+      caption: true,
+      navigation: false,
+      fx: 'mosaic'
+    });
+    $('.gallery .gall-item').touchTouch();
+  });
+</script>
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<div class="texture">
+<!--==============================
+              header
+=================================-->
+<header id="home" class="page">
+  <div class="navigation single-page-nav">
+    <div class="container_12">
+      <div class="grid_12">
+        <h3 class="logo">
+          <a href="index.html">GEDION  OTULA</a>
+        </h3>
+        <nav>
+          <ul>
+           <li><a href="#home" class="current">Home</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#contacts">Contacts</a></li>
+         </ul>
         </nav>
       </div>
-
-      <div class="wandia-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="wandia-be-together-section mdl-typography--text-center">
-        <div class="wandia-wear-section">
-          <div class="wandia-wear-band">
-            <div class="wandia-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">WordPress, re-imagined.</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                More control, more features, less bloat.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                  See what's new in Mtaandao v 16.10<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
+    </div>
+  </div>
+  <div id="camera_wrap">
+    <div data-src="images/slide-1.jpg">
+      <div class="caption fadeIn">Taking Care of Your Business Network</div>
+    </div>
+    <div data-src="images/slide-2.jpg">
+      <div class="caption fadeIn">Impressive Designs, Suitable for Cool Websites</div>
+    </div>
+    <div data-src="images/slide-3.jpg">
+      <div class="caption fadeIn">Animations that Works for Your Presentation</div>
+    </div>
+  </div>
+</header>
+<!--=====================
+          Content
+======================-->
+<section class="content">
+  <div class="ic"></div>
+  <div class="pad-1">
+    <div class="container_12">
+      <div class="grid_12">
+        <h2>About Me
+          <span>A BRIEF INTRODUCTION OF MYSELF</span>
+        </h2>
+        <p class="offset__1"><!--Type a small heading  if needed--></p>
+        <img src="images/page-img_1.jpg" alt="" class="fleft">
+        <div class="extra_wrapper">
+          <div class="text-1">
+         <!--Type a small heading  if needed-->
           </div>
+          <div class="text-2 color1">
+            <a href="#">Networking</a> &bull;
+            <a href="#">Video Animation</a> &bull;
+            <a href="#">Front End Programming</a>
+          </div>
+          <p>I specialise in the following fields mentioned above.I have good skills on connecting and configuring routers and other network devices needed in any kind of business network.I have designed a number of website and got satisfying feedbacks which gave me encouragement to practice more!<br>
+          I have also done alot of animation and inspirational videos for adverts and learning among others.Check out my YouTube channel for samples.</p>
+          
+          <!--embed youtube videos-->
+
+          <a href="#" class="btn">Download Resume</a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+<section id="portfolio" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2 class="color2">My Portfolio</h2>
+      <div id="filters" class="button-group">
+        <a href="#" class="btn is-checked" data-filter="*">Show all</a>
+        <a href="#" class="btn" data-filter=".ill">Networking</a>
+        <a href="#" class="btn" data-filter=".photo">Animations</a>
+        <a href="#" class="btn" data-filter=".design">Websites</a>
+      </div>
+      <div class="el gallery" id="isotope">
+        <div class="element design">
+          <div>
+            <a href="images/big1.jpg" class="gall-item"><img src="images/gal_img1.jpg" alt=""><span></span></a>
         </div>
         </div>
-        <div class="wandia-customized-section">
-          <div class="wandia-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Our diverse branding options enable you to make the system trully yours.
-              <br>
-              <a href="" class="wandia-link mdl-typography--font-light">Personalize your life</a>
-            </p>
-          </div>
-          <div class="wandia-customized-section-image"></div>
-        </div>
-        <div class="wandia-more-section">
-          <div class="wandia-section-title mdl-typography--display-1-color-contrast">More from Mtaandao</div>
-          <div class="wandia-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Mtaandao Desktop</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">A stand-alone desktop application to manage your websites/webapps or Mtaandao projects.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="wandia-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   More Info
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Chuo School Management System</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Manage your learning instution from anywhere, securely.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="wandia-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   More Details
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Chuo Online School</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">An open-source free school for anyone and by everyone</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="wandia-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   View Courses
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">WordPress Themes & Plugins</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">We create beautiful themes and plugins to improve your WordPress experience.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="wandia-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   View Shop
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
+        <div class="element photo">
+          <div>
+            <a href="images/big2.jpg" class="gall-item"><img src="images/gal_img2.jpg" alt=""><span></span></a>
           </div>
         </div>
-
-        <footer class="wandia-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Back to Top
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
+        <div class="element  photo">
+          <div>
+            <a href="images/big3.jpg" class="gall-item"><img src="images/gal_img3.jpg" alt=""><span></span></a>
           </div>
-
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">© 2016 <a href="http://mtaandao.co.ke" target="_blank" alt="Mtaandao">Mtaandao Digital Solutions</a></p>
+        </div>
+        <div class="clear"></div>
+        <div class="element ill">
+          <div>
+            <a href="images/big4.jpg" class="gall-item"><img src="images/gal_img4.jpg" alt=""><span></span></a>
           </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="wandia-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-              Versions
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">16.09.1</li>
-              <li class="mdl-menu__item">16.10</li>
-            </ul>
-            <a class="wandia-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-              For Developers
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">Developer resources</li>
-              <li class="mdl-menu__item">Mtaandao Open Source Project</li>
-              <li class="mdl-menu__item">Mtaandao SDK</li>
-              <li class="mdl-menu__item">Mtaandao for Work</li>
-            </ul>
-            <a class="wandia-link mdl-typography--font-light" href="">Blog</a>
-            <a class="wandia-link mdl-typography--font-light" href="">Privacy Policy</a>
+        </div>
+        <div class="element ill">
+          <div>
+            <a href="images/big5.jpg" class="gall-item"><img src="images/gal_img5.jpg" alt=""><span></span></a>
           </div>
-
-        </footer>
+        </div>
+        <div class="element design">
+          <div>
+            <a href="images/big6.jpg" class="gall-item"><img src="images/gal_img6.jpg" alt=""><span></span></a>
+          </div>
+        </div>
       </div>
     </div>
-    <a href="https://github.com/mtaandaoio/mtaandao/archive/v16.10.zip" target="_self" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Download Now</a>
-    <script src="js/material.min.js"></script>
-  </body>
+    <div class="clear"></div>
+  </div>
+</section>
+<section id="skills" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2>Skills</h2>
+    </div>
+    <div class="grid_3">
+     <div style="clear:both"></div>
+        <div class="circle">
+          <input class="knob" data-angleOffset="0" value="93" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">Front End Programming</a></div>
+    </div>
+    <div class="grid_3">
+      <div class="circle">
+          <input class="knob" data-angleOffset="0" value="82" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">Networking</a></div>
+    </div>
+    <div class="grid_3">
+      <div class="circle">
+          <input class="knob" data-angleOffset="0" value="90" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">Video Editing</a></div>
+    </div>
+    <div class="grid_3">
+      <div class="circle">
+          <input class="knob" data-angleOffset="0" value="89" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">Animation Video</a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<!--creating a separation between skills and get in touch-->
+<section id="testimonials" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      
+    <div class="clear"></div>
+  </div>
+</section>
+<section id="contacts" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="grid_6">
+      <form id="contact-form" >
+          
+          <fieldset>
+            <label class="name">
+              <input type="text" name="name" placeholder="Name*:" value="" data-constraints="@Required @JustLetters"  />
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*This is not a valid name.</span>
+            </label>
+            <label class="email">
+              <input type="text" name="email" placeholder="E-mail*:" value="" data-constraints="@Required @Email" />
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*This is not a valid email.</span>
+            </label>
+            <label class="phone">
+              <input type="text" name="phone" placeholder="Telephone:" value="" data-constraints="@Required @JustNumbers" />
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*This is not a valid phone.</span>
+            </label>
+            <label class="message">
+              <textarea name="message" placeholder="Message*:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*The message is too short.</span>
+            </label>
+            <div>
+              <input type="submit" name="submit" class="btn" value="Submit" />
+              
+            </div>
+          </fieldset>
+          <!-- <div class="modal fade response-message">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  You message has been sent! We will be in touch soon.
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </form>
+      </div>
+      <div class="grid_6"><br>
+        <u>For More Information.</u> <br>
+        SwahiliPot - Hub <br>
+       	Kenya - Mombasa<br>
+        TEL: +254727160390 or 
+        		   +254739117602 <br>
+        FAX: +1 800 889 9898 <br>
+        E-mail: <a href="#">gedionotula2@gmail.com</a>
+      </div>
+    <div class="clear"></div>
+  </div>
+  <div class="google-map-api">
+    <div id="map-canvas" class="gmap"></div>
+  </div>
+  <p>Check out my social media platforms</p>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="social-icons">
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.facebook.com/?ref=tn_tnmn" class="fa fa-facebook"></a>
+        <a href="https://www.youtube.com/results?search_query=gedion+otula" class="fa fa-youtube"></a>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+</section>
+<!--==============================
+              footer
+=================================-->
+</div>
+<footer id="footer">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="copyright"> &copy; <span id="copyright-year">2014</span>| <a href="#">Privacy Policy </a> <br>
+       Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">Gedion Otula</a>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script>
+
+$(document).ready(function() {
+  $('#contact-form').submit(function(){
+    swal("Good job!", "Message sent Successful!", "success");
+  });
+});
+  // Prevent console.log from generating errors in IE for the purposes of the demo
+  if ( ! window.console ) console = { log: function(){} };
+  // The actual plugin
+  $('.single-page-nav').singlePageNav({
+      offset: $('.single-page-nav').outerHeight(),
+      filter: ':not(.external)',
+      updateHash: true,
+      beforeStart: function() {
+          console.log('begin scrolling');
+      },
+      onComplete: function() {
+          console.log('done scrolling');
+      }
+  });
+</script>
+<script type="text/javascript">
+          google_api_map_init();
+          function google_api_map_init(){
+            var map;
+            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14));
+            var styleArray = [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#193341"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c5a71"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#29768a"
+            },
+            {
+                "lightness": -37
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#3e606f"
+            },
+            {
+                "weight": 2
+            },
+            {
+                "gamma": 0.84
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "weight": 0.6
+            },
+            {
+                "color": "#1a3541"
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c5a71"
+            }
+        ]
+    }
+]
+            function initialize() {
+              var mapOptions = {
+                zoom: 13,
+                center: coordData,
+                scrollwheel: false,
+                styles: styleArray
+              }
+              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(coordData);
+              var center = map.getCenter();
+            });
+          }
+            google.maps.event.addDomListener(window, "load", initialize);
+          }
+      </script>
+              <!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
+      <script src="js/jquery.knob.js"></script>
+<script>
+  $(function($) {
+    $(".knob").knob({
+        change : function (value) {
+            //console.log("change : " + value);
+        },
+        release : function (value) {
+            //console.log(this.$.attr('value'));
+            console.log("release : " + value);
+        },
+        cancel : function () {
+            console.log("cancel : ", this);
+        },
+        /*format : function (value) {
+            return value + '%';
+        },*/
+        draw : function () {
+            // "tron" case
+            if(this.$.data('skin') == 'tron') {
+                this.cursorExt = 0.3;
+                var a = this.arc(this.cv)  // Arc
+                    , pa                   // Previous arc
+                    , r = 1;
+                this.g.lineWidth = this.lineWidth;
+                if (this.o.displayPrevious) {
+                    pa = this.arc(this.v);
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.pColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                    this.g.stroke();
+                }
+                this.g.beginPath();
+                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                this.g.stroke();
+                this.g.lineWidth = 2;
+                this.g.beginPath();
+                this.g.strokeStyle = this.o.fgColor;
+                this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                this.g.stroke();
+                return false;
+            }
+        }
+    });
+    // Example of infinite knob, iPod click wheel
+    var v, up=0,down=0,i=0
+        ,$idir = $("div.idir")
+        ,$ival = $("div.ival")
+        ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+        ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+    $("input.infinite").knob(
+                        {
+                        min : 0
+                        , max : 20
+                        , stopper : false
+                        , change : function () {
+                                        if(v > this.cv){
+                                            if(up){
+                                                decr();
+                                                up=0;
+                                            }else{up=1;down=0;}
+                                        } else {
+                                            if(v < this.cv){
+                                                if(down){
+                                                    incr();
+                                                    down=0;
+                                                }else{down=1;up=0;}
+                                            }
+                                        }
+                                        v = this.cv;
+                                    }
+                        });
+    });
+</script>
+<script src="js/isotop_ini.js"></script>
+</body>
 </html>
